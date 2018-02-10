@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Saldo y últimos movimientos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="container-fluid">
+
+      <!-- CABECERA -->
+
+      <header>
+        <div class="row">
+          <div class="col-md-5 hidden-xs hidden-sm">
+            <div class="logo">
+              <a href="micuenta.html"><img src="img/logo-bci.png" alt="logo bci"></a>
+            </div>
+          </div>
+          <div class="col-md-7 hidden-xs hidden-sm">
+            <div class="col-md-5 perfil">
+              <div class="col-md-3">
+                <img src="img/usuario.png" alt="avatar usuario">
+              </div>
+              <div class="col-md-9">
+                <small>Bienvenido:</small>
+                <p class="nombre">Pablo Monares</p>
+                <small class="uacceso">Último acceso 9-06-17 a las 13:04 hrs.</small>
+              </div>
+            </div>
+
+            <div class="col-md-7 dcontacto">
+              <div class="col-md-7 dcon">
+                <div class="tel">
+                  <img src="img/telefono.png" alt="icono telefono">
+                  <a href="tel:6008242424">600 824 24 24</a>
+                </div>
+                <span class="buscar"></span>
+                <div class="row atencion">
+                  <img src="img/atencion.png" alt="icono de atencion">
+                  <span><a href="#">Canales de atención</a></span>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <a href="#" class="btn btn-primary">Cerrar sesión</a>
+                <div class="row cliente">
+                  <img src="img/cliente.png" alt="icono de cliente">
+                  <span><a href="#">Servicio al cliente</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MENÚ ESCRITORIO -->
+
+          <nav class="hidden-xs hidden-sm">
+            <div class="row">
+              <ul class="nav navbar-nav">
+                <li class="activa"><a href="micuenta.html">Mi Banco</a></li>
+                <li><a href="#">Pagos y Servicios</a></li>
+                <li><a href="transferencias.html">Transferencias</a></li>
+                <li><a href="#">Tarjetas de Crédito</a></li>
+                <li><a href="#">Créditos</a></li>
+                <li><a href="#">Inversiones</a></li>
+                <li><a href="#">Seguros</a></li>
+              </ul>
+            </div>
+          </nav>
+
+        <!-- MENÚ MÓVIL -->
+
+          <nav class="navbar navbar-default hidden visible-xs visible-sm">
+            <div class="row">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <div class="logo">
+                  <a href="micuenta.html"><img src="img/logo-bci.png" alt="logo bci"></a>
+                </div>
+                <div class="buscar">
+                  <input type="text">
+                </div>
+              </div>
+
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="activa"><a href="micuenta.html">Mi Banco</a></li>
+                  <li><a href="#">Pagos y Servicios</a></li>
+                  <li><a href="transferencias.html">Transferencias</a></li>
+                  <li><a href="#">Tarjetas de Crédito</a></li>
+                  <li><a href="#">Créditos</a></li>
+                  <li><a href="#">Inversiones</a></li>
+                  <li><a href="#">Seguros</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </header>
+
+      <!-- NAV MÓVIL -->
+
+      <div class="barra-colores">
+        <div class="barra-verde"></div>
+        <div class="barra-rojo"></div>
+        <div class="barra-amarillo"></div>
+        <div class="barra-azul"></div>
+      </div>
+
+      <nav class="nav-movil hidden visible-xs visible-sm">
+        <h3><a href="#"><img src="img/flecha-izquierda.png" alt="icono flecha izquierda"> Saldos y movimientos</a></h3>
+      </nav>
+
+      <!-- ACCESOS PARALELOS -->
+
+        <div class="row">
+            <aside class="col-md-3 hidden-xs hidden-sm" id="lateral">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Mi cuenta <img src="img/flecha-derecha.png" alt="icono flecha derecha" class="navbar-right">
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <ul>
+                        <li class="marcada"><a href="#">Saldo y Últimos Movimientos</a></li>
+                        <li><a href="#">Cartola Actual</a></li>
+                        <li><a href="#">Cartola Histórica</a></li>
+                        <li><a href="#">Cheques</a></li>
+                        <li><a href="#">Depósitos</a></li>
+                        <li><a href="#">Certificados</a></li>
+                        <li><a href="#">Mi Calendario</a></li>
+                        <li><a href="#">Mis Contratos</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Línea de Sobregiro <img src="img/flecha-derecha.png" alt="icono flecha derecha" class="navbar-right">
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                      <ul>
+                        <li><a href="#">Opción 1</a></li>
+                        <li><a href="#">Opción 2</a></li>
+                        <li><a href="#">Opción 3</a></li>
+                        <li><a href="#">Opción 4</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Otras Cuentas <img src="img/flecha-derecha.png" alt="icono flecha derecha" class="navbar-right">
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                      <ul>
+                        <li><a href="#">Opción 1</a></li>
+                        <li><a href="#">Opción 2</a></li>
+                        <li><a href="#">Opción 3</a></li>
+                        <li><a href="#">Opción 4</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingFour">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Mis Datos Personales <img src="img/flecha-derecha.png" alt="icono flecha derecha" class="navbar-right">
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                    <div class="panel-body">
+                      <ul>
+                        <li><a href="#">Opción 1</a></li>
+                        <li><a href="#">Opción 2</a></li>
+                        <li><a href="#">Opción 3</a></li>
+                        <li><a href="#">Opción 4</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingFive">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        SMS Bci <img src="img/flecha-derecha.png" alt="icono flecha derecha" class="navbar-right">
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                    <div class="panel-body">
+                      <ul>
+                        <li><a href="#">Opción 1</a></li>
+                        <li><a href="#">Opción 2</a></li>
+                        <li><a href="#">Opción 3</a></li>
+                        <li><a href="#">Opción 4</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </aside>
+
+          <!-- CONTENIDO PRINCIPAL -->
+
+          <main class="col-md-9">
+            <h1 class="hidden-xs hidden-sm">Saldo y últimos movimientos</h1>
+            <div class="caja-blanca principal">
+              <div class="row">
+                <div class="col-md-4 caja1 hidden-xs hidden-sm">
+                  <h2 class="verde">Pablo Andres Monares Vallejos</h2>
+                  <small class="rut">RUT: 00.000.000-4</small>
+                  <p>Saldo disponible al: <small class="gris">23-06-2017</small></p>
+                  <select>>
+                    <option value="27149528">Cuenta corriente N°27149528</option>
+                    <option value="27149529">Cuenta corriente N°27149529</option>
+                    <option value="27149530">Cuenta corriente N°27149530</option>
+                  </select>
+
+                </div>
+                <div class="col-md-4 caja2">
+                  <p><span class="cuenta">Cuenta corriente N°27149528</span>
+                  <br>Saldo disponible
+                  <br><span class="saldo verde">$198.300</span></p>
+                </div>
+                <div class="col-md-4 caja3">
+                  <ul>
+                    <li>Saldo contable <br class="hidden visible-xs visible-sm"><span class="verde navbar-right">$198.300</span></li>
+                    <li>Retenciones <br class="hidden visible-xs visible-sm"><span class="verde navbar-right">$9.990</span></li>
+                    <li class="hidden-xs hidden-sm">Sobregiro Disponible <span class="verde navbar-right">$9.990</span></li>
+                    <li class="hidden-xs hidden-sm">Sobregiro Utilizado <span class="verde navbar-right">$9.990</span></li>
+                    <li class="hidden-xs hidden-sm">Línea de Emergencia <span class="verde navbar-right">$9.990</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- OPCIONES -->
+
+            <div class="caja-blanca acciones hidden-xs hidden-sm">
+              <div class="row">
+                <ul class="nav navbar-nav">
+                  <li><a href="transferencias.html"><img src="img/transferir.png" alt="icono transferir"> Transferir</a></li>
+                  <li><a href=""><img src="img/cuenta.png" alt="icono cuenta"> Pagar cuenta</a></li>
+                  <li><a href=""><img src="img/aumento.png" alt="icono aumento"> Solicitar aumento</a></li>
+                  <li><a href=""><img src="img/sobregiro.png" alt="icono sobregiro"> Pagar sobregiro</a></li>
+                  <li><a href=""><img src="img/personalizar.png" alt="icono personalizar"> Personalizar</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="actualizar hidden visible-xs visible-sm">
+              <a href=""><img src="img/actualizar.png" alt="icono actualizar"></a>
+            </div>
+
+            <!-- TABLA -->
+
+            <div class="caja-blanca">
+              <div class="row titular-tabla">
+                <div class="col-md-6">
+                  <h2>Últimos movimientos</h2>
+                </div>
+                <div class="col-md-6 text-right hidden-xs hidden-sm imprimir">
+                  <a href=""><img src="img/impresora.png" alt="icono imprimir"> Imprimir</a>
+                  <a href=""><img src="img/excel.png" alt="icono excel"> Descargar Excel</a>
+                </div>
+              </div>
+              <small class="cartola hidden-xs hidden-sm">En esta cartola encontrará los últimos 18 movimientos de su cuenta, para una inrformación más detallada ingrese a su <a href="">Cartola Actual</a> e <a href="">Histórica</a>.</small>
+
+              <table class="table hidden-xs hidden-sm">
+                <thead>
+                  <tr>
+                    <th>Fecha</th>
+                    <th>Descripción</th>
+                    <th>Serie</th>
+                    <th>Monto</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>22-06-2017</td>
+                    <td>Compra Tarjeta Débito</td>
+                    <td>00000000000123</td>
+                    <td><span class="rojo">- $3.990<span></td>
+                  </tr>
+                  <tr>
+                    <td>22-06-2017</td>
+                    <td>Compra Tarjeta Débito</td>
+                    <td>00000000000123</td>
+                    <td><span class="rojo">- $9.990<span></td>
+                  </tr>
+                  <tr>
+                    <td>22-06-2017</td>
+                    <td>Pago Recibido</td>
+                    <td>00000000000123</td>
+                    <td><span class="verde">+ $6.990<span></td>
+                  </tr>
+                  <tr>
+                    <td>18-06-2017</td>
+                    <td>Compra Tarjeta Débito</td>
+                    <td>00000000000123</td>
+                    <td><span class="rojo">- $3.990<span></td>
+                  </tr>
+                  <tr>
+                    <td>12-06-2017</td>
+                    <td>Pago Recibido</td>
+                    <td>00000000000123</td>
+                    <td><span class="verde">- $7.990<span></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- TABLA MOVIL -->
+
+              <table class="table hidden visible-xs visible-sm">
+                <tbody>
+                  <tr>
+                    <td>Compra Tarjeta Débito<br><small>22-06-2017</small></td>
+                    <td><span class="rojo">- $3.990<span></td>
+                  </tr>
+                  <tr>
+                    <td>Compra Tarjeta Débito<br><small>22-06-2017</small></td>
+                    <td><span class="rojo">- $9.990<span></td>
+                  </tr>
+                  <tr>
+                    <td>Pago Recibido<br><small>22-06-2017</small></td>
+                    <td><span class="verde">+ $6.990<span></td>
+                  </tr>
+                  <tr>
+                    <td>Compra Tarjeta Débito<br><small>18-06-2017</small></td>
+                    <td><span class="rojo">- $3.990<span></td>
+                  </tr>
+                  <tr>
+                    <td>Pago Recibido<br><small>12-06-2017</small></td>
+                    <td><span class="verde">- $7.990<span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </main>
+        </div>
+      </div>
+
+
+    <!-- SCRIPTS -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </body>
+</html>

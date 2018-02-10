@@ -1,0 +1,1029 @@
+
+/* ---------- TIPOGRAFIA ---------- */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+/* ---------- GENERALES ---------- */
+
+* {
+  transition: 300ms;
+}
+
+body {
+  background-color: #f4f6f7;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #555;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+header, aside, .caja-blanca {
+  background-color: #fff;
+}
+
+h1 {
+  color: #1f7acc;
+  font-size: 28px;
+  margin: 35px 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+}
+
+strong {
+  font-weight: 700;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.verde {
+  color: #51ab38;
+}
+
+.rojo {
+  color: #ed4a4a;
+}
+
+a.btn {
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  background-color: #ed4a4a;
+}
+
+/* ---------- FORMULARIO TRANSFERENCIA ---------- */
+
+select {
+  padding: 10px;
+  width: 100%;
+  border-radius: 0;
+  border: 1px solid #ddd;
+  color: #999;
+  background-color: #fff;
+  background-image: url('../img/flecha-abajo-negra.png');
+  background-repeat: no-repeat;
+  background-position: 94%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.transferencia {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.transferencia h2 {
+  color: #5ca2db;
+  margin-bottom: 58px;
+}
+
+.transferencia select:first-child {
+  margin-top: 10px;
+}
+
+.transferencia select,
+.transferencia input,
+.transferencia textarea {
+  margin-bottom: 40px;
+}
+
+select:hover,
+.transferencia input[type="text"]:hover,
+.transferencia textarea:hover {
+  border: 1px solid #777;
+}
+
+.transferencia input[type="text"],
+.transferencia textarea {
+  padding: 10px;
+  width: 100%;
+  border-radius: 0;
+  border: 1px solid #ddd;
+  color: #999;
+  background-color: #fff;
+}
+
+.transferencia input::placeholder,
+.transferencia textarea::placeholder {
+  color: #999;
+}
+
+textarea {
+  resize: none;
+}
+
+.transferencia a.btn {
+  width: 49%;
+  font-size: 19px;
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.transferencia a.btn-success:hover {
+  background-color: #3c8827;
+}
+
+.transferencia a.btn-link {
+  background-color: transparent;
+  color: #51ab38;
+}
+
+.transferencia a.btn-link:hover {
+  text-decoration: none;
+  color: #3c8827;
+}
+
+.transferencia a.btn-success {
+  background-color: #51ab38;
+}
+
+.transferencia label.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.transferencia .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.transferencia .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.transferencia .container:hover input ~ .checkmark {
+    border: 1px solid #777;
+}
+
+.transferencia .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.transferencia .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.transferencia .container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.transferencia .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.transferencia textarea {
+  margin-bottom: 10px;
+}
+
+.transferencia .contador {
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+.saldo-corto {
+  padding: 0;
+}
+
+.saldo-corto a {
+  display: inline-block;
+  border-bottom: 1px solid #5ca2db;
+  padding-bottom: 4px;
+  margin-top: 30px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #5ca2db;
+}
+
+.saldo-destacado {
+  background-color: #fafafa;
+  padding: 45px 0 30px 30px;
+  margin-right: -10px;
+  margin-top: -25px;
+  font-weight: 400;
+}
+
+.saldo-destacado .saldo {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+/* ---------- MENÚ ---------- */
+
+header {
+  box-shadow: 0 8px 16px rgba(200,200,200,0.1);
+  z-index: 1;
+  position: relative;
+}
+
+header .logo {
+  margin: 45px 0 45px 50px;
+}
+
+header nav {
+  border-top: 1px solid #ddd;
+}
+
+header nav ul, .caja-blanca.acciones ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav ul li, .caja-blanca.acciones ul li {
+  width: 19%;
+  text-align: center;
+}
+
+header nav ul.navbar-nav li a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #444;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+header nav ul.navbar-nav li a:hover,
+.caja-blanca.acciones ul li a:hover {
+  background-color: #f1f1f1;
+}
+
+header nav ul li.activa {
+  border-bottom: 1px solid #51ab38;
+}
+
+header nav ul li.activa a {
+  color: #51ab38;
+}
+
+header .perfil {
+  padding: 40px 0 0 0;
+  color: #1f7acc;
+}
+
+header .perfil p {
+  margin-bottom: -3px;
+  margin-top: -3px;
+  font-size: 19px;
+}
+
+header .perfil small {
+  font-size: 13px;
+}
+
+header .perfil .uacceso {
+  color: #555;
+}
+
+header .perfil img {
+  padding-top: 0;
+}
+
+header .dcontacto .buscar {
+  display: inline-block;
+  width: 53px;
+  height: 42px;
+  background-color: #eee;
+  background-image: url('../img/buscar-negra.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  position: relative;
+  right: -15px;
+}
+
+header .dcontacto a.btn {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 9px;
+  width: 100%;
+}
+
+header .dcontacto a.btn:hover {
+  background-color: #1f7acc;
+}
+
+header .dcontacto .tel {
+  display: inline-block;
+  position: relative;
+  top: -12px;
+}
+
+header .dcontacto .tel img {
+  margin-right: 5px;
+  margin-left: -15px
+}
+
+header .dcontacto .tel a,
+header .dcontacto .atencion span a,
+header .dcontacto .cliente span a {
+  color: #555;
+}
+
+header .dcontacto .atencion,
+header .dcontacto .cliente {
+  margin-top: 35px;
+}
+
+header .dcontacto .tel a:hover,
+header .dcontacto .atencion a:hover,
+header .dcontacto .cliente a:hover {
+  color: #5ca2db;
+  text-decoration: none;
+}
+
+header .dcontacto {
+  padding-left: 0;
+}
+
+header .dcontacto .dcon {
+  padding-left: 25px;
+}
+
+header .dcontacto .atencion span,
+header .dcontacto .cliente span {
+  vertical-align: middle;
+}
+
+header .dcontacto .cliente img {
+  margin-left: 15px;
+}
+
+/* ---------- LATERAL ---------- */
+
+aside#lateral {
+  width: 23%;
+}
+
+aside {
+  height: 150vh;
+}
+
+aside .panel-group {
+  margin-right: -15px;
+  margin-top: 20px;
+}
+
+aside .panel-group .panel {
+  box-shadow: none;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  border-radius: 0;
+}
+
+aside .panel-group .panel-heading {
+  background-color: transparent;
+  padding: 15px;
+}
+
+aside .panel-group .panel-heading:hover {
+background-color: #f1f1f1;
+}
+
+aside .panel-group .panel-heading .panel-title {
+  margin-left: 40px;
+}
+
+aside .panel-group .panel-heading h4.panel-title a {
+  color: #777;
+  font-size: 17px;
+  font-weight: 300;
+  display: block;
+  text-decoration: none;
+}
+
+aside .panel-group .panel-heading h4.panel-title a:hover,
+aside .panel-group .panel-heading h4.panel-title a[aria-expanded="true"] {
+  color: #2e9ef3;
+}
+
+aside .panel-group .panel-heading h4.panel-title a img {
+  margin-right: 20px
+}
+
+aside .panel-group .panel-heading h4.panel-title a:hover img,
+aside .panel-group .panel-heading h4.panel-title a[aria-expanded="true"] img {
+  transform: rotate(90deg);
+}
+
+aside .panel-group .panel .panel-body ul li {
+  line-height: 1.9;
+  padding-left: 20px;
+  margin-left: -20px;
+}
+
+aside .panel-group .panel .panel-body ul li:hover {
+  background-color: #f1f1f1;
+}
+
+aside .panel-group .panel .panel-body ul li a {
+  color: #999;
+  display: block;
+}
+
+aside .panel-group .panel .panel-body ul li a:hover {
+  text-decoration: none;
+  color: #2e9ef3;
+}
+
+aside .panel-group .panel .panel-body ul li.marcada a {
+  color: #2e9ef3;
+}
+
+/* ---------- CONTENIDO PRINCIPAL ---------- */
+
+.caja-blanca {
+  margin: 30px;
+  padding: 25px;
+  box-shadow: 0 0 16px rgba(180,180,180,0.1);
+}
+
+.caja1, .caja2 {
+  border-right: 1px solid #ddd;
+}
+
+.caja1, .caja2, .caja3 {
+  padding: 0 20px;
+}
+
+.caja1 h2 {
+  margin-bottom: 0px;
+}
+
+.caja1 .rut {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.caja1 p {
+  font-weight: 400;
+}
+
+.caja1 p .gris {
+  color: #999;
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.caja2 {
+  padding: 0 10px;
+}
+
+.caja2 p {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.caja2 .cuenta {
+  font-weight: 400;
+  color: #444;
+}
+
+.caja2 .saldo {
+  font-size: 54px;
+  font-weight: 600;
+}
+
+.caja3 ul {
+  padding: 15px 25px 0 25px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+.caja3 ul li:hover,
+.caja3 ul li:hover span {
+  background-color: #fafafa;
+  cursor: default;
+  border-radius: 5px;
+}
+
+
+.caja-blanca.acciones {
+  padding: 0;
+}
+
+.caja-blanca.acciones ul li a {
+  padding: 25px 0  25px 0;
+  color: #5ca2db;
+}
+
+.caja-blanca.acciones ul li:last-child a {
+  color: #ed4a4a;
+}
+
+.caja-blanca.acciones ul li a img {
+  margin-right: 5px;
+}
+
+/* ---------- TABLA ---------- */
+
+.titular-tabla {
+  border-bottom: 1px solid #ddd;
+  margin: auto;
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+}
+
+.titular-tabla h2 {
+  color: #5ca2db;
+  margin-left: -15px;
+  margin-top: 3px;
+}
+
+.titular-tabla a {
+  color: #777;
+}
+
+.titular-tabla .imprimir a:first-child {
+  margin-right: 20px;
+}
+
+.cartola {
+  font-weight: 400;
+  color: 999;
+}
+
+.cartola a {
+  color: #5ca2db;
+}
+
+table {
+  margin-top: 30px;
+  font-weight: 400;
+}
+
+table.table tr th:nth-child(3) {
+  width: 10%;
+}
+
+table.table tr th:nth-child(4) {
+  width: 18%;
+}
+
+table .rojo, table .verde {
+  font-size: 18px;
+}
+
+table.table tr th {
+  background-color: #1f7acc;
+  color: #eee;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 12px 20px;
+  border: 0;
+  border-right: 1px solid #fff;
+  background-image: url('../img/flecha-abajo-blanca.png');
+  background-repeat: no-repeat;
+  background-position: 94%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+table.table tr td {
+  padding: 20px;
+  border: 0;
+}
+
+table.table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+table.table tr:hover {
+  background-color: #dfedfb;
+}
+
+
+/* ---------- MÓVIL MEDIUM ---------- */
+
+@media screen and (max-width: 969px) {
+
+  body {
+    background-color: #fff;
+  }
+
+  /* ---------- MENÚ MÓVIL ---------- */
+
+  .navbar-header {
+      float: none;
+      background-color: #fff;
+  }
+
+  .navbar-toggle {
+      display: block;
+  }
+
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+
+  .navbar-nav {
+      float: none!important;
+      margin: 7.5px 0;
+  }
+
+  .navbar-nav>li {
+      float: none;
+      width: 90%;
+      margin: auto;
+  }
+
+  .navbar-nav>li:hover {
+    background-color: #fafafa;
+  }
+
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .navbar-text {
+      float: none;
+      margin: 15px 0;
+  }
+
+  .navbar-collapse.collapse.in {
+      display: block!important;
+  }
+
+  .collapsing {
+      overflow: hidden!important;
+  }
+
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    margin: 15px 29px 10px 0;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #6b6b6b;
+    width: 29px;
+    height: 4px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+  }
+
+  header nav ul {
+      display: block;
+  }
+
+  header nav ul li {
+    width: 100%;
+    line-height: 1.5;
+  }
+
+  header nav ul.navbar-nav li a {
+    font-weight: 300;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .navbar-default .navbar-nav>li.activa a {
+    color: #51ab38;
+  }
+
+  .navbar-default .buscar input {
+    display: inline-block;
+    position: absolute;
+    right: 75px;
+    top: 17px;
+    padding: 5px;
+    border: 1px solid transparent;
+    outline: none;
+    box-shadow: none;
+    width: 120px;
+    background-color: transparent;
+    background-image: url('../img/buscar.png');
+    background-repeat: no-repeat;
+    background-position: 94%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+  }
+
+  .navbar-default .buscar input:focus {
+    border-color: #ddd;
+  }
+
+  header .logo {
+    margin: 22px 0 20px 40px;
+    display: inline-block;
+  }
+
+  .barra-colores {
+    display: flex;
+    margin-top: -20px;
+  }
+
+  .barra-colores .barra-verde,
+  .barra-colores .barra-rojo,
+  .barra-colores .barra-amarillo,
+  .barra-colores .barra-azul {
+    height: 2px;
+    width: 25%;
+  }
+
+  .barra-colores .barra-verde {
+    background-color: #51ab38;
+  }
+
+  .barra-colores .barra-rojo {
+    background-color: #ed4a4a;
+  }
+
+  .barra-colores .barra-amarillo {
+    background-color: #fdd733;
+  }
+
+  .barra-colores .barra-azul {
+    background-color: #1f7acc;
+  }
+
+  .nav-movil {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .nav-movil h3 {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: -4px;
+    margin-bottom: 13px;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  .nav-movil h3 a {
+    color: #888;
+    text-decoration: none;
+  }
+
+  .nav-movil h3 img {
+    margin-right: 7px;
+  }
+
+  /* ---------- CONTENIDO ---------- */
+
+  .caja1, .caja2 {
+    border-right: 0;
+  }
+
+  .caja2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+  .caja2 p {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  .caja2 .saldo {
+    font-weight: 600;
+  }
+
+  .caja3 ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .caja3 ul li {
+    text-align: center;
+  }
+
+  .caja-blanca {
+    margin: 23px;
+    padding: 15px;
+    box-shadow: 0 0 16px rgba(140,140,140,0.2);
+  }
+
+  main .caja-blanca:nth-child(5) {
+    margin: 20px 0 23px 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .actualizar {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  /* ---------- FORMULARIO TRANSFERENCIA ---------- */
+
+  .transfer-datos {
+    box-shadow: none;
+    margin: 0;
+  }
+
+  .transferencia h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .transferencia h2:nth-child(6) {
+    margin-top: 30px;
+  }
+
+  .transferencia select,
+  .transferencia input,
+  .transferencia textarea {
+    margin-bottom: 15px;
+  }
+
+  .transferencia label.container {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .transferencia .destinatario strong {
+    font-weight: 600;
+  }
+
+  .transferencia .destinatario span {
+    color: #999;
+  }
+
+  .transferencia a.btn {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .transferencia a.btn-success {
+    margin-bottom: 10px;
+  }
+
+  .transferencia .botones {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /* ---------- TABLA ---------- */
+
+  .titular-tabla {
+    border-bottom: 0;
+  }
+
+  .titular-tabla h2 {
+    margin-left: 15px;
+  }
+
+  table {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #333;
+  }
+
+  table .rojo, table .verde {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 0px;
+  }
+
+  table.table tr:nth-child(odd) {
+    background-color: #fafafa;
+  }
+
+  table.table tr:nth-child(even) {
+    background-color: transparent;
+  }
+
+  table.table tbody tr td:first-child {
+    padding-left: 30px;
+  }
+
+  table small {
+    color: #999;
+  }
+
+  table.tabla-transfer tr {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+
+  table.tabla-transfer tr:nth-child(odd) {
+    background-color: transparent;
+  }
+
+  table.tabla-transfer tr:hover {
+    background-color: #fafafa;
+  }
+
+  table.tabla-transfer img {
+    margin-top: 15px;
+  }
+
+  table.tabla-transfer a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  table.tabla-transfer a:hover {
+    color: #5ca2db;
+  }
+
+  /* ---------- PESTAÑAS TABLA ---------- */
+
+  ul.nav-tabs {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  ul.nav-tabs li {
+    width: 100%;
+    border-right: 1px solid #ddd;
+    text-align: center;
+    background-color: #fafafa;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  ul.nav-tabs li a {
+    color: #999;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  ul.nav-tabs .active {
+    background-color: #fff;
+    border-top: 2px solid #5ca2db;
+  }
+
+  ul.nav-tabs .active a {
+    color: #5ca2db;
+  }
+
+  .nav-tabs>li.active>a,
+  .nav-tabs>li.active>a:focus,
+  .nav-tabs>li.active>a:hover {
+    border: 1px solid transparent;
+  }
+}
+
+
+/* ---------- MÓVIL SMALL ---------- */
+
+@media screen and (max-width: 719px) {
+  header .logo img {
+    width: 64%;
+  }
+}

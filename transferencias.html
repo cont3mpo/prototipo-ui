@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Transferencias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="container-fluid">
+
+      <!-- CABECERA -->
+
+      <header>
+        <div class="row">
+          <div class="col-md-5 hidden-xs hidden-sm">
+            <div class="logo">
+              <a href="micuenta.html"><img src="img/logo-bci.png" alt="logo bci"></a>
+            </div>
+          </div>
+          <div class="col-md-7 hidden-xs hidden-sm">
+            <div class="col-md-5 perfil">
+              <div class="col-md-3">
+                <img src="img/usuario.png" alt="avatar usuario">
+              </div>
+              <div class="col-md-9">
+                <small>Bienvenido:</small>
+                <p class="nombre">Pablo Monares</p>
+                <small class="uacceso">Último acceso 9-06-17 a las 13:04 hrs.</small>
+              </div>
+            </div>
+
+            <div class="col-md-7 dcontacto">
+              <div class="col-md-7 dcon">
+                <div class="tel">
+                  <img src="img/telefono.png" alt="icono telefono">
+                  <a href="tel:6008242424">600 824 24 24</a>
+                </div>
+                <span class="buscar"></span>
+                <div class="row atencion">
+                  <img src="img/atencion.png" alt="icono atencion">
+                  <span><a href="#">Canales de atención</a></span>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <a href="#" class="btn btn-primary">Cerrar sesión</a>
+                <div class="row cliente">
+                  <img src="img/cliente.png" alt="icono cliente">
+                  <span><a href="#">Servicio al cliente</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MENÚ ESCRITORIO -->
+
+          <nav class="hidden-xs hidden-sm">
+            <div class="row">
+              <ul class="nav navbar-nav">
+                <li><a href="micuenta.html">Mi Banco</a></li>
+                <li><a href="#">Pagos y Servicios</a></li>
+                <li class="activa"><a href="transferencias.html">Transferencias</a></li>
+                <li><a href="#">Tarjetas de Crédito</a></li>
+                <li><a href="#">Créditos</a></li>
+                <li><a href="#">Inversiones</a></li>
+                <li><a href="#">Seguros</a></li>
+              </ul>
+            </div>
+          </nav>
+
+        <!-- MENÚ MÓVIL -->
+
+          <nav class="navbar navbar-default hidden visible-xs visible-sm">
+            <div class="row">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <div class="logo">
+                  <a href="micuenta.html"><img src="img/logo-bci.png" alt="logo bci"></a>
+                </div>
+                <div class="buscar">
+                  <input type="text">
+                </div>
+              </div>
+
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="micuenta.html">Mi Banco</a></li>
+                  <li><a href="#">Pagos y Servicios</a></li>
+                  <li class="activa"><a href="transferencias.html">Transferencias</a></li>
+                  <li><a href="#">Tarjetas de Crédito</a></li>
+                  <li><a href="#">Créditos</a></li>
+                  <li><a href="#">Inversiones</a></li>
+                  <li><a href="#">Seguros</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </header>
+
+      <!-- NAV MÓVIL -->
+
+      <div class="barra-colores">
+        <div class="barra-verde"></div>
+        <div class="barra-rojo"></div>
+        <div class="barra-amarillo"></div>
+        <div class="barra-azul"></div>
+      </div>
+
+      <nav class="nav-movil hidden visible-xs visible-sm">
+        <h3><a href="#"><img src="img/flecha-izquierda.png" alt="icono flecha izquierda"> Transferencias</a></h3>
+      </nav>
+
+      <!-- ACCESOS PARALELOS -->
+
+        <div class="row">
+            <aside class="col-md-3 hidden-xs hidden-sm" id="lateral">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Línea de Sobregiro <img src="img/flecha-derecha.png" alt="icono flecha derecha" class="navbar-right">
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                      <ul>
+                        <li><a href="#">Opción 1</a></li>
+                        <li><a href="#">Opción 2</a></li>
+                        <li><a href="#">Opción 3</a></li>
+                        <li><a href="#">Opción 4</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Otras Cuentas <img src="img/flecha-derecha.png" alt="icono flecha derecha" class="navbar-right">
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                      <ul>
+                        <li><a href="#">Opción 1</a></li>
+                        <li><a href="#">Opción 2</a></li>
+                        <li><a href="#">Opción 3</a></li>
+                        <li><a href="#">Opción 4</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingFour">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Mis Datos Personales <img src="img/flecha-derecha.png" alt="icono flecha derecha" class="navbar-right">
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                    <div class="panel-body">
+                      <ul>
+                        <li><a href="#">Opción 1</a></li>
+                        <li><a href="#">Opción 2</a></li>
+                        <li><a href="#">Opción 3</a></li>
+                        <li><a href="#">Opción 4</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </aside>
+
+          <!-- CONTENIDO PRINCIPAL -->
+
+          <main class="col-md-9">
+            <h1 class="hidden-xs hidden-sm">Transferencias</h1>
+            <div class="caja-blanca principal">
+              <div class="row">
+                <div class="col-md-7 hidden-xs hidden-sm transferencia">
+                  <div class="col-md-3">
+                    <h2>Origen</h2>
+                    <h2>Destinatario</h2>
+                    <h2>Monto</h2>
+                  </div>
+                  <div class="col-md-9">
+                    <select>
+                      <option value="27149528">Cuenta corriente N°27149528</option>
+                      <option value="27149529">Cuenta corriente N°27149529</option>
+                      <option value="27149530">Cuenta corriente N°27149530</option>
+                    </select>
+
+                    <select>
+                      <option disabled selected>Buscar por nombre o N° de cuenta</option>
+                      <option value="00-000-00-000">Andrea Banco Estado N° 00-000-00-000</option>
+                      <option value="00-000-00-000">Andrea Banco Estado N° 00-000-00-000</option>
+                      <option value="00-000-00-000">Andrea Banco Estado N° 00-000-00-000</option>
+                      <option value="00-000-00-000">Andrea Banco Estado N° 00-000-00-000</option>
+                      <option value="00-000-00-000">Andrea Banco Estado N° 00-000-00-000</option>
+                    </select>
+
+                    <input type="text" name="" value="" placeholder="Ingresa monto a transferir">
+                    <br>
+                    <label class="container"> Mensaje
+                      <input type="checkbox" name="" value="true" checked>
+                      <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <textarea name="name" placeholder="Ingresa un mensaje"></textarea>
+                    <span class="contador">0/60</span>
+                    <br>
+                    <a href="#" class="btn btn-link">Cancelar</a>
+                    <a href="#" class="btn btn-success">Aceptar</a>
+                  </div>
+                </div>
+                <div class="col-md-5 saldo-corto hidden-xs hidden-sm">
+                  <div class="saldo-destacado">
+                    Saldo disponible <span class="saldo verde">$198.300</span></p>
+                  </div>
+                  <a href="#">+ Agregar Destinatario</a>
+                </div>
+                <div class="col-md-4 caja2 hidden visible-xs visible-sm">
+                  <p><span class="cuenta">Cuenta corriente N°27149528</span>
+                  <br>Saldo disponible
+                  <br><span class="saldo verde">$198.300</span></p>
+                </div>
+                <div class="col-md-4 caja3 hidden visible-xs visible-sm">
+                  <ul>
+                    <li>Saldo contable <br class="hidden visible-xs visible-sm"><span class="verde navbar-right">$198.300</span></li>
+                    <li>Retenciones <br class="hidden visible-xs visible-sm"><span class="verde navbar-right">$9.990</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="actualizar hidden visible-xs visible-sm">
+              <a href=""><img src="img/actualizar.png" alt="icono actualizar"></a>
+            </div>
+
+            <!-- PESTAÑAS TABLA MÓVIL -->
+
+            <nav class="hidden visible-xs visible-sm">
+              <div class="row">
+                <ul class="nav nav-tabs">
+                  <li data-toggle="tab" class="active"><a href="#">Todos</a></li>
+                  <li data-toggle="tab"><a href="#">Frecuentes</a></li>
+                  <li data-toggle="tab"><a href="#">Agregar</a></li>
+                </ul>
+              </div>
+            </nav>
+
+              <!-- TABLA MOVIL -->
+
+              <table class="table tabla-transfer hidden visible-xs visible-sm">
+                <tbody>
+                  <tr>
+                    <td>Andrea<br><small>Banco Estado N° 00-000-00-000</small></td>
+                    <td><img src="img/flecha-derecha.png" alt="icono flecha derecha"></td>
+                  </tr>
+                  <tr>
+                    <td><a href="transferencia-persona.html">Bernardo<br><small>Banco Santander N° 00-000-00-000</small></a></td>
+                    <td><a href="transferencia-persona.html"><img src="img/flecha-derecha.png" alt="icono flecha derecha"></a></td>
+                  </tr>
+                  <tr>
+                    <td>Camila<br><small>Banco Estado N° 00-000-00-000</small></td>
+                    <td><img src="img/flecha-derecha.png" alt="icono flecha derecha"></td>
+                  </tr>
+                  <tr>
+                    <td>Daniel<br><small>Banco BCI N° 00-000-00-000</small></td>
+                    <td><img src="img/flecha-derecha.png" alt="icono flecha derecha"></td>
+                  </tr>
+                  <tr>
+                    <td>Eduardo<br><small>Banco Estado N° 00-000-00-000</small></td>
+                    <td><img src="img/flecha-derecha.png" alt="icono flecha derecha"></td>
+                  </tr>
+                  <tr>
+                    <td>Fabiola<br><small>Banco Estado N° 00-000-00-000</small></td>
+                    <td><img src="img/flecha-derecha.png" alt="icono flecha derecha"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </main>
+        </div>
+      </div>
+
+
+    <!-- SCRIPTS -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </body>
+</html>
