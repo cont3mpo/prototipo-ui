@@ -9,6 +9,10 @@
   transition: 300ms;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #f4f6f7;
   font-size: 16px;
@@ -320,6 +324,8 @@ header .perfil img {
 
 header .dcontacto .buscar {
   display: inline-block;
+  position: relative;
+  right: -50px;
   width: 53px;
   height: 42px;
   background-color: #eee;
@@ -329,8 +335,32 @@ header .dcontacto .buscar {
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
-  position: relative;
-  right: -15px;
+}
+
+header .dcontacto .buscar:hover {
+  background-color: #dadada;
+}
+
+header .dcontacto .buscar input {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  width: 53px;
+  height: 42px;
+  border: 1px solid transparent;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+header .dcontacto .buscar input:focus {
+  width: 250px;
+  border-color: #ddd;
+  background-color: #fff;
 }
 
 header .dcontacto a.btn {
@@ -576,6 +606,11 @@ aside .panel-group .panel .panel-body ul li.marcada a {
   color: #777;
 }
 
+.titular-tabla a:hover {
+  text-decoration: none;
+  color: #5ca2db;
+}
+
 .titular-tabla .imprimir a:first-child {
   margin-right: 20px;
 }
@@ -619,6 +654,11 @@ table.table tr th {
   background-position: 94%;
   -webkit-appearance: none;
   -moz-appearance: none;
+  cursor: pointer;
+}
+
+table.table tr th:hover {
+  background-color: #1a67ad;
 }
 
 table.table tr td {
@@ -632,6 +672,19 @@ table.table tr:nth-child(even) {
 
 table.table tr:hover {
   background-color: #dfedfb;
+}
+
+
+/* ---------- LARGE ---------- */
+
+@media screen and (max-width: 1250px) {
+  header .dcontacto .buscar {
+    right: -30px;
+  }
+
+  aside .panel-group .panel-heading .panel-title {
+    margin-left: 20px;
+  }
 }
 
 
@@ -714,6 +767,10 @@ table.table tr:hover {
     border-radius: 2px;
   }
 
+  .navbar-default .navbar-toggle .icon-bar:last-child {
+    margin-bottom: 0;
+  }
+
   header nav ul {
       display: block;
   }
@@ -742,7 +799,7 @@ table.table tr:hover {
     border: 1px solid transparent;
     outline: none;
     box-shadow: none;
-    width: 120px;
+    width: 40px;
     background-color: transparent;
     background-image: url('../img/buscar.png');
     background-repeat: no-repeat;
@@ -750,10 +807,12 @@ table.table tr:hover {
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
+    transition: 500ms;
   }
 
   .navbar-default .buscar input:focus {
     border-color: #ddd;
+    width: 100px;
   }
 
   header .logo {
@@ -922,7 +981,7 @@ table.table tr:hover {
   }
 
   .titular-tabla h2 {
-    margin-left: 15px;
+    margin: 20px 0 0 15px;
   }
 
   table {

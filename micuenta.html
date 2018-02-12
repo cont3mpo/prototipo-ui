@@ -18,12 +18,12 @@
 
       <header>
         <div class="row">
-          <div class="col-md-5 hidden-xs hidden-sm">
+          <div class="col-md-4 col-lg-5 hidden-xs hidden-sm">
             <div class="logo">
               <a href="micuenta.html"><img src="img/logo-bci.png" alt="logo bci"></a>
             </div>
           </div>
-          <div class="col-md-7 hidden-xs hidden-sm">
+          <div class="col-md-8 col-lg-7 hidden-xs hidden-sm">
             <div class="col-md-5 perfil">
               <div class="col-md-3">
                 <img src="img/usuario.png" alt="avatar usuario">
@@ -41,7 +41,7 @@
                   <img src="img/telefono.png" alt="icono telefono">
                   <a href="tel:6008242424">600 824 24 24</a>
                 </div>
-                <span class="buscar"></span>
+                <span class="buscar"><input type="text" name="buscar"></span>
                 <div class="row atencion">
                   <img src="img/atencion.png" alt="icono de atencion">
                   <span><a href="#">Canales de atención</a></span>
@@ -294,13 +294,13 @@
               </div>
               <small class="cartola hidden-xs hidden-sm">En esta cartola encontrará los últimos 18 movimientos de su cuenta, para una inrformación más detallada ingrese a su <a href="">Cartola Actual</a> e <a href="">Histórica</a>.</small>
 
-              <table class="table hidden-xs hidden-sm">
+              <table class="table hidden-xs hidden-sm" id="myTable">
                 <thead>
                   <tr>
-                    <th>Fecha</th>
-                    <th>Descripción</th>
-                    <th>Serie</th>
-                    <th>Monto</th>
+                    <th onclick="sortTable()">Fecha</th>
+                    <th onclick="sortTable()">Descripción</th>
+                    <th onclick="sortTable()">Serie</th>
+                    <th onclick="sortTable()">Monto</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -370,6 +370,43 @@
 
 
     <!-- SCRIPTS -->
+
+    <script>
+      function sortTable() {
+        var table, rows, switching, i, x, y, shouldSwitch;
+        table = document.getElementById("myTable");
+        switching = true;
+        /*Make a loop that will continue until
+        no switching has been done:*/
+        while (switching) {
+          //start by saying: no switching is done:
+          switching = false;
+          rows = table.getElementsByTagName("TR");
+          /*Loop through all table rows (except the
+          first, which contains table headers):*/
+          for (i = 1; i < (rows.length - 1); i++) {
+            //start by saying there should be no switching:
+            shouldSwitch = false;
+            /*Get the two elements you want to compare,
+            one from current row and one from the next:*/
+            x = rows[i].getElementsByTagName("TD")[0];
+            y = rows[i + 1].getElementsByTagName("TD")[0];
+            //check if the two rows should switch place:
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              //if so, mark as a switch and break the loop:
+              shouldSwitch= true;
+              break;
+            }
+          }
+          if (shouldSwitch) {
+            /*If a switch has been marked, make the switch
+            and mark that a switch has been done:*/
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+          }
+        }
+      }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
